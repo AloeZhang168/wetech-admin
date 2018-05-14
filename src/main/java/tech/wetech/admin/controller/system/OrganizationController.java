@@ -26,8 +26,6 @@ public class OrganizationController extends BaseController{
     @GetMapping
     @RequiresPermissions("organization:view")
     public String toPage(Model model) {
-        OrganizationExample example = new OrganizationExample();
-        example.setOrderByClause("priority");
         return "system/organization";
     }
 
