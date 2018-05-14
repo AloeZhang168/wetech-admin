@@ -28,7 +28,6 @@ public class OrganizationController extends BaseController{
     public String toPage(Model model) {
         OrganizationExample example = new OrganizationExample();
         example.setOrderByClause("priority");
-        model.addAttribute("organizationList", organizationService.find(example));
         return "system/organization";
     }
 
