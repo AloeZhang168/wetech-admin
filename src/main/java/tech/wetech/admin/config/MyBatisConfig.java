@@ -1,7 +1,7 @@
 package tech.wetech.admin.config;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.context.annotation.Configuration;
-import tk.mybatis.spring.annotation.MapperScan;
 
 @Configuration
 @MapperScan(basePackages = "tech.wetech.admin.mapper")

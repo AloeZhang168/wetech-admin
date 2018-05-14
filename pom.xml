@@ -26,12 +26,6 @@
 	</properties>
 
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/org.quartz-scheduler/quartz -->
-		<dependency>
-			<groupId>org.quartz-scheduler</groupId>
-			<artifactId>quartz</artifactId>
-			<version>2.3.0</version>
-		</dependency>
 		<dependency>
 			<groupId>com.github.theborakompanioni</groupId>
 			<artifactId>thymeleaf-extras-shiro</artifactId>
@@ -153,24 +147,6 @@
 			</exclusions>
 		</dependency>
 		<!-- end druid -->
-		<!--mapper-->
-		<dependency>
-			<groupId>tk.mybatis</groupId>
-			<artifactId>mapper-spring-boot-starter</artifactId>
-			<version>2.0.0</version>
-		</dependency>
-		<!--pagehelper-->
-		<dependency>
-			<groupId>com.github.pagehelper</groupId>
-			<artifactId>pagehelper-spring-boot-starter</artifactId>
-			<version>1.2.3</version>
-			<exclusions>
-				<exclusion>
-					<groupId>org.mybatis.spring.boot</groupId>
-					<artifactId>mybatis-spring-boot-starter</artifactId>
-				</exclusion>
-			</exclusions>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-configuration-processor</artifactId>
@@ -194,18 +170,6 @@
 					<overwrite>true</overwrite>
 					<verbose>true</verbose>
 				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>mysql</groupId>
-						<artifactId>mysql-connector-java</artifactId>
-						<version>${mysql.version}</version>
-					</dependency>
-					<dependency>
-						<groupId>tk.mybatis</groupId>
-						<artifactId>mapper-generator</artifactId>
-						<version>1.0.0</version>
-					</dependency>
-				</dependencies>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
