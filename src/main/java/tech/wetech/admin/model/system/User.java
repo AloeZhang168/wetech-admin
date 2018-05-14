@@ -38,7 +38,6 @@ public class User implements Serializable{
     /**
      * 拥有的角色列表
      */
-    @Null(message = "测试测试测试")
     private String roleIds;
     private List<Long> roleIdList;
     private Boolean locked = Boolean.FALSE;
